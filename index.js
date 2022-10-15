@@ -56,13 +56,13 @@ const convertValues = () =>{
   ).format(inputReais / bitcoin)
   } 
   
-  if( select.value === 'RMB Renminbi'){
+  if( select.value === 'RMB Renminbi (China)'){
     currencyValueText.innerHTML = new Intl.NumberFormat('zh-CN',
     { style: 'currency', currency: 'RMB' }
   ).format(inputReais / renminbi)
   } 
   
-  if( select.value === '¥ Iene'){
+  if( select.value === '¥ Iene (Japão)'){
     currencyValueText.innerHTML = new Intl.NumberFormat('ja-JP',
     { style: 'currency', currency: 'JPY' }
   ).format(inputReais / iene)
@@ -183,12 +183,12 @@ changeCurrency = () =>{
       currencyImg.src = './img/bitcoin.png'
     }
     
-    if( select.value === 'RMB Renminbi'){
+    if( select.value === 'RMB Renminbi (China)'){
       currencyName.innerHTML = 'Renminbi'
       currencyImg.src = './img/chn.png'
     }
     
-    if( select.value === '¥ Iene'){
+    if( select.value === '¥ Iene (Japão)'){
       currencyName.innerHTML = 'Iene'
       currencyImg.src = './img/jpn2.png'
     }
